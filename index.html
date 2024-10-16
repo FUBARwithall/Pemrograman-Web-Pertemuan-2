@@ -3,132 +3,16 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Pecel</title>
+  <title>Pecel Lele</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    /* Styling untuk tabel */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-
-    th,
-    td {
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    .contact-section {
-      display: flex;
-      flex-direction: column;
-      /* Atur agar konten dalam kolom */
-      align-items: center;
-      /* Pusatkan secara horizontal */
-      text-align: center;
-      /* Pusatkan teks */
-      background-color: #ffeb3b;
-      /* Warna latar belakang kuning untuk seluruh section */
-      padding: 20px;
-      /* Tambahkan padding di dalam section */
-      margin: 20px auto;
-      /* Margin atas dan bawah, dengan margin otomatis untuk pusat */
-      width: 50%;
-      /* Lebar 50% dari container */
-      border-radius: 4px;
-      /* Radius sudut section */
-    }
-
-    .contact-form {
-      max-width: 400px;
-      /* Lebar maksimal formulir */
-      width: 100%;
-      /* Lebar 100% dari container */
-    }
-
-    .contact-form h3 {
-      margin: 0 0 20px;
-      /* Margin untuk heading di dalam formulir */
-    }
-
-    .contact-form label {
-      display: block;
-      /* Label dalam baris baru */
-      margin-bottom: 8px;
-      /* Margin bawah label */
-      font-weight: bold;
-      /* Tebalkan font label */
-    }
-
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
-      width: 100%;
-      /* Lebar 100% */
-      padding: 10px;
-      /* Padding dalam input */
-      margin-bottom: 15px;
-      /* Jarak antar elemen */
-      border: 1px solid #ccc;
-      /* Border input */
-      border-radius: 4px;
-      /* Radius sudut input */
-    }
-
-    .contact-form button {
-      background-color: #4CAF50;
-      /* Warna latar tombol */
-      color: white;
-      /* Warna teks tombol */
-      padding: 10px 20px;
-      /* Padding tombol */
-      border: none;
-      /* Tanpa border */
-      border-radius: 4px;
-      /* Radius sudut tombol */
-      cursor: pointer;
-      /* Pointer saat hover */
-    }
-
-    .contact-form button:hover {
-      background-color: #45a049;
-      /* Warna tombol saat hover */
-    }
-
-    .form-label {
-      text-align: left;
-    }
-
-    footer {
-      text-align: center;
-      /* Pusatkan teks footer */
-    }
-
-    .footer-links {
-      display: inline-block;
-      /* Tampilkan link dalam satu baris */
-    }
-
-    .footer-links a {
-      margin-right: 10px;
-      /* Jarak antar link */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <h1 align="center" style="margin-top: 30px;">Pecel Lele</h1>
+    <h1 class="title">Pecel Lele</h1>
+    <p class="subtitle">Nikmati sensasi lezat di setiap gigitan!</p>
     <hr />
     <nav>
       <ul>
@@ -141,29 +25,38 @@
 
   <main>
     <section style="display: flex; align-items: flex-start;">
-      <img src="IMG/Pecel lele.jpg" alt="Pecel lele" style="max-width: 40%; margin-right: 20px;" />
+      <img src="IMG/Pecel lele.jpg" alt="Pecel lele" style="max-width: 40%; margin-right: 20px;" class="image"/>
       <article>
         <h2>Apa itu pecel lele?</h2>
-        <p align="justify">
+        <p>
           Pecel lele adalah hidangan populer di Indonesia yang terdiri dari ikan lele goreng
           yang disajikan dengan sambal terasi pedas dan lalapan seperti timun, kemangi, dan
           kol. Lele digoreng hingga garing di luar namun tetap lembut di dalam, sementara
-          sambalnya memberikan cita rasa pedas dan gurih. Hidangan ini biasanya disajikan
-          dengan nasi putih hangat, dan sering ditemukan di warung makan kaki lima atau
-          restoran sederhana. Pecel lele terkenal karena harganya yang terjangkau dan
-          rasanya yang khas.
+          sambalnya memberikan cita rasa pedas dan gurih.
         </p>
         <h2>Layanan kami</h2>
-        <p align="justify">
-          Kami menawarkan berbagai layanan untuk memanjakan pelanggan pecel lele
-          Anda, seperti makan di tempat yang nyaman, layanan pesan antar, serta
-          paket hemat dengan nasi, lele, sambal, dan lalapan. Kami juga
-          menyediakan catering untuk acara, promo menarik, dan opsi pre-order
-          online. Selain itu, pelanggan bisa memilih tingkat kepedasan sambal dan
-          variasi lalapan. Dengan menjaga standar kebersihan tinggi, kami
-          memastikan kualitas terbaik untuk setiap hidangan.
+        <p>
+          Kami menawarkan berbagai layanan seperti makan di tempat, pesan antar, serta paket hemat.
+          Selain itu, kami menyediakan opsi catering dan promo menarik bagi pelanggan.
         </p>
       </article>
+    </section>
+
+    <section class="product-header">
+      <h2>Daftar Produk</h2>
+    </section>
+
+    <section class="product-list">
+      <div class="product-card">
+        <img src="IMG/lele.png" alt="Paket Pecel Lele">
+        <h3>Paket Pecel Lele</h3>
+        <p>Lele goreng dengan nasi, sambal, dan lalapan.</p>
+      </div>
+      <div class="product-card">
+        <img src="IMG/—Pngtree—chicken_1014585.png" alt="Paket Ayam Goreng">
+        <h3>Paket Ayam Goreng</h3>
+        <p>Ayam goreng dengan nasi, sambal, dan lalapan.</p>
+      </div>
     </section>
 
     <section>
@@ -195,33 +88,32 @@
       </table>
     </section>
 
-    <section class="contact-section">
-      <form class="contact-form" action="#" method="post">
-        <h2>Contact Us</h2>
-        <label for="name" class="form-label">Nama:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message" class="form-label">Pesan:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Kirim</button>
-      </form>
-    </section>
+        <section class="contact-section">
+          <form class="contact-form" action="#" method="post">
+            <h2>Contact Us</h2>
+            <label for="name" class="form-label">Nama:</label>
+            <input type="text" id="name" name="name" required />
+        
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" required />
+        
+            <label for="message" class="form-label">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Kirim</button>
+          </form>
+        </section>
   </main>
-  <hr />
+
   <footer>
     <div class="footer-links">
-      <a href="#">
-        <img src="IMG/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook" style="width: 24px; height: 24px;" />
-      </a>
+      <a href="#"><img src="IMG/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
       <a href="mailto:info@pecellele.com">
-        <img src="IMG\1564504_email_letter_mail_message_icon.png" alt="Email" style="width: 24px; height: 24px;" />
+        <img src="IMG/1564504_email_letter_mail_message_icon.png" alt="Email">
       </a>
     </div>
     <p>Copyright &copy; 2023 Pecel Lele. All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
