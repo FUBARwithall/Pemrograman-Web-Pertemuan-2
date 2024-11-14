@@ -3,117 +3,177 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Pecel Lele</title>
+  <title>Bungkusan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1 class="title">Pecel Lele</h1>
-    <p class="subtitle">Nikmati sensasi lezat di setiap gigitan!</p>
-    <hr />
     <nav>
-      <ul>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+      <ul> 
+        <li><a href="#">Bungkusan</a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="hideOnDesktop" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg></a></li>
+      </ul>
     </nav>
-  </header>
 
-  <main>
-    <section style="display: flex; align-items: flex-start;">
-      <img src="IMG/Pecel lele.jpg" alt="Pecel lele" style="max-width: 40%; margin-right: 20px;" class="image"/>
+  <section>
+    <section class="product-section">
+      <img src="IMG/NasiKotak.jpg" alt="Nasi Kotak" class="image" />
       <article>
-        <h2>Apa itu pecel lele?</h2>
+        <h2>Apa itu bungkusan?</h2>
         <p>
-          Pecel lele adalah hidangan populer di Indonesia yang terdiri dari ikan lele goreng
-          yang disajikan dengan sambal terasi pedas dan lalapan seperti timun, kemangi, dan
-          kol. Lele digoreng hingga garing di luar namun tetap lembut di dalam, sementara
-          sambalnya memberikan cita rasa pedas dan gurih.
-        </p>
-        <h2>Layanan kami</h2>
-        <p>
-          Kami menawarkan berbagai layanan seperti makan di tempat, pesan antar, serta paket hemat.
-          Selain itu, kami menyediakan opsi catering dan promo menarik bagi pelanggan.
+          Bungkusan adalah restoran khusus takeaway yang mengusung konsep hidangan praktis namun tetap menyehatkan,
+          lezat, dan
+          ramah di kantong. Kami memahami kebutuhan masyarakat modern yang serba cepat dan sibuk, namun tetap peduli
+          dengan pola
+          makan sehat dan bergizi. Oleh karena itu, kami merancang setiap menu dengan bahan-bahan berkualitas tinggi,
+          tanpa MSG,
+          dan pilihan karbohidrat variatif seperti nasi, mi, dan kentang, sehingga pelanggan bisa menikmati makanan yang
+          sesuai
+          selera dan kebutuhan mereka.
         </p>
       </article>
+    </section>
+
+    <section class="layanan-section">
+      <section class="layanan">
+        <h2>Layanan kami</h2>
+        <p>
+          Bungkusan menyediakan berbagai layanan yang dirancang untuk memenuhi kebutuhan pelanggan dengan cara praktis
+          dan sehat.
+          Kami menawarkan layanan takeaway cepat agar setiap pesanan bisa diambil tanpa harus menunggu lama. Selain itu,
+          tersedia
+          opsi pre-order dan berlangganan harian atau mingguan bagi pelanggan yang ingin menikmati hidangan berkualitas
+          setiap
+          hari tanpa repot.
+        </p>
+      </section>
+
+      <section class="table">
+        <table>
+          <thead>
+            <tr>
+              <th id="Nama-Paket">Nama Paket</th>
+              <th id="Deskripsi">Deskripsi</th>
+              <th id="Harga">Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Paket Ayam kecap</td>
+              <td>Nasi putih, ayam kecap, sayur tumis, dan sambal</td>
+              <td>Rp 20.000</td>
+            </tr>
+            <tr>
+              <td>Paket Mi ayam suwir</td>
+              <td>Mi goreng, ayam suwir pedas, dan acar</td>
+              <td>Rp 18.000</td>
+            </tr>
+            <tr>
+              <td>Paket combo</td>
+              <td>Nasi + mi goreng, nugget ayam, dan sayur</td>
+              <td>Rp 22.000</td>
+            </tr>
+            <tr>
+              <td>Paket Tahu Tempe</td>
+              <td>Nasi putih, tahu goreng, tempe orek, dan lalapan</td>
+              <td>Rp 15.000</td>
+            </tr>
+            <tr>
+              <td>Paket Nasi Kuning</td>
+              <td>Nasi kuning, gorengan, dan teh manis hangat</td>
+              <td>Rp 10.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </section>
 
     <section class="product-header">
       <h2>Daftar Produk</h2>
     </section>
-
     <section class="product-list">
-      <div class="product-card">
-        <img src="IMG/lele.png" alt="Paket Pecel Lele">
-        <h3>Paket Pecel Lele</h3>
-        <p>Lele goreng dengan nasi, sambal, dan lalapan.</p>
-      </div>
-      <div class="product-card">
-        <img src="IMG/—Pngtree—chicken_1014585.png" alt="Paket Ayam Goreng">
-        <h3>Paket Ayam Goreng</h3>
-        <p>Ayam goreng dengan nasi, sambal, dan lalapan.</p>
+      <div class="row">
+        <div class="product-card">
+          <img src="IMG/Paket Ayam kecap.webp" alt="Paket Ayam kecap">
+          <h3>Paket Ayam kecap</h3>
+          <p>Nasi putih, ayam kecap, sayur tumis, dan sambal.</p>
+        </div>
+        <div class="product-card">
+          <img src="IMG/Paket Mi ayam suwir.webp" alt="Paket Mi ayam suwir">
+          <h3>Paket Mi ayam suwir</h3>
+          <p>Mi goreng, ayam suwir pedas, dan acar.</p>
+        </div>
+        <div class="product-card">
+          <img src="IMG/Paket combo nasi & mi.webp" alt="Paket combo">
+          <h3>Paket combo</h3>
+          <p>Nasi + mi goreng, nugget ayam, dan sayur.</p>
+        </div>
+        <div class="product-card">
+          <img src="IMG/Paket Tahu Tempe.webp" alt="Paket Tahu Tempe">
+          <h3>Paket Tahu Tempe</h3>
+          <p>Nasi putih, tahu goreng, tempe orek, dan lalapan.</p>
+        </div>
+        <div class="product-card">
+          <img src="IMG/Paket Nasi kuning.webp" alt="Paket Nasi Kuning">
+          <h3>Paket Nasi Kuning</h3>
+          <p>Nasi kuning, gorengan, dan teh manis hangat.</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <table>
-        <thead>
-          <tr>
-            <th>Nama Layanan/Menu</th>
-            <th>Deskripsi</th>
-            <th>Harga</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Paket Pecel Lele</td>
-            <td>Lele goreng, nasi, sambal, lalapan</td>
-            <td>Rp 25.000</td>
-          </tr>
-          <tr>
-            <td>Paket Hemat Ayam</td>
-            <td>Ayam goreng, nasi, sambal, lalapan</td>
-            <td>Rp 20.000</td>
-          </tr>
-          <tr>
-            <td>Layanan Pesan Antar</td>
-            <td>Pengiriman makanan ke rumah</td>
-            <td>Rp 10.000</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="contact-section">
+      <form class="contact-form" action="#" method="post">
+        <h2>Contact Us</h2>
+        <label for="name" class="form-label">Nama:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message" class="form-label">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
     </section>
+    </main>
 
-        <section class="contact-section">
-          <form class="contact-form" action="#" method="post">
-            <h2>Contact Us</h2>
-            <label for="name" class="form-label">Nama:</label>
-            <input type="text" id="name" name="name" required />
-        
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" id="email" name="email" required />
-        
-            <label for="message" class="form-label">Pesan:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        
-            <button type="submit">Kirim</button>
-          </form>
-        </section>
-  </main>
+    <footer>
+      <div class="footer-links">
+        <a href="#"><img src="IMG/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
+        <a href="mailto:info@pecellele.com">
+          <img src="IMG/1564504_email_letter_mail_message_icon.png" alt="Email">
+        </a>
+      </div>
+      <p>Copyright &copy; 2023 Bungkusan. All Rights Reserved.</p>
+    </footer>
 
-  <footer>
-    <div class="footer-links">
-      <a href="#"><img src="IMG/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook"></a>
-      <a href="mailto:info@pecellele.com">
-        <img src="IMG/1564504_email_letter_mail_message_icon.png" alt="Email">
-      </a>
-    </div>
-    <p>Copyright &copy; 2023 Pecel Lele. All Rights Reserved.</p>
-  </footer>
+    <script>
+      function showSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.add('show');
+        }
+
+        function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.remove('show');
+        }
+    </script>
 </body>
 
 </html>
